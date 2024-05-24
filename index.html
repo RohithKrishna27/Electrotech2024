@@ -33,7 +33,6 @@
                 </div>
             </div>
             <p id="typing-text">Welcome to the branch Fest of Electronics and Communication department</p>
-            <!-- Countdown timer section -->
             <div id="countdown-section">
                 <div class="countdown">
                     <div class="countdown-item">
@@ -54,7 +53,6 @@
     </div>
 
     <script>
-        // JavaScript to simulate typing effect and repeating text
         document.addEventListener("DOMContentLoaded", function() {
             var textElement = document.getElementById('typing-text');
             var text = textElement.innerHTML;
@@ -69,9 +67,9 @@
                     i++;
                     setTimeout(typeWriter, speed);
                 } else {
-                    i = 0; // Reset index to repeat typing
-                    setTimeout(typeWriter, 2000); // Wait 2 seconds before repeating
-                    textElement.innerHTML = ''; // Clear text for the next iteration
+                    i = 0; 
+                    setTimeout(typeWriter, 2000); 
+                    textElement.innerHTML = ''; 
                 }
             }
 
@@ -87,20 +85,16 @@
             // Get the current date and time
             var now = new Date().getTime();
             
-            // Calculate the distance between now and the countdown date
             var distance = countDownDate - now;
             
-            // Calculate hours, minutes, and seconds
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
-            // Display the countdown in the HTML elements
             document.getElementById("hours").innerHTML = pad(hours);
             document.getElementById("minutes").innerHTML = pad(minutes);
             document.getElementById("seconds").innerHTML = pad(seconds);
             
-            // If the countdown is over, display a message
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("countdown-section").innerHTML = "EXPIRED";
