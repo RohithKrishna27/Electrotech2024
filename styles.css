@@ -28,7 +28,7 @@ html {
   max-width: 100%;
   height: auto;
   background-color: #ffffff50;
-  border: 2px solid rgba(30, 129, 165, 0.667);
+  border: 2px solid rgba(6, 37, 190, 0.667);
   border-radius: 8px;
   margin: auto;
 }
@@ -38,7 +38,7 @@ nav {
   top: 100px;
   /* width: 500px; */
   max-width: 85%;
-  border: 2px solid rgba(26, 70, 171, 0.958);
+  border: 2px solid rgba(26, 192, 238, 0.958);
   border-radius: 8px;
   margin: auto;
   text-align: center;
@@ -179,6 +179,7 @@ countdown {
 .countdown-number {
   font-size: 50px;
   color: #f7f7f7; /* Change the color to green for a tech look */
+  font-family: "Poetsen One", sans-serif;
   text-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Add a green glow effect */
 }
 
@@ -186,7 +187,11 @@ countdown {
   font-size: 16px;
   color: #ffffff; /* Change the color to white */
   text-transform: uppercase; /* Make the labels uppercase */
-  letter-spacing: 2px; /* Add some letter spacing */
+  letter-spacing: 1px; /* Add some letter spacing */
+  font-family: "Poetsen One", sans-serif;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Add a green glow effect */
+
+
 }
 /* Change the font for the paragraph */
 p#typing-text {
