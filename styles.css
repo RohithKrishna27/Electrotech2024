@@ -1,8 +1,8 @@
-/* General Styles */
-
 @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap");
+
 body,
 html {
+  width: 100%;
   height: 100%;
   margin: 0;
   font-family: "B612", sans-serif;
@@ -11,6 +11,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .header-image-container {
@@ -20,6 +21,7 @@ html {
   width: 100%;
   text-align: center;
   z-index: 1;
+  margin: auto;
 }
 
 .header-image-container img {
@@ -28,16 +30,21 @@ html {
   background-color: #ffffff50;
   border: 2px solid rgba(30, 129, 165, 0.667);
   border-radius: 8px;
+  margin: auto;
 }
 
 nav {
   position: absolute;
   top: 100px;
-  width: 100%;
+  width: 550px;
+  max-width: 90%;
+  border: 2px solid rgba(26, 70, 171, 0.958);
+  border-radius: 8px;
+  margin: auto;
   text-align: center;
+  background-color: rgba(33, 30, 30, 0.581);
   z-index: 2;
   padding: 10px 0;
-  text-align: center;
   font-family: "B612", sans-serif;
   font-weight: bolder;
   font-style: italic;
@@ -48,7 +55,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -62,8 +69,6 @@ nav ul li a {
   text-decoration: none;
   font-weight: bolder;
   font-size: 16px;
-
-  margin-top: 10px;
   padding: 6px 10px;
   transition: 0.5s;
   position: relative;
@@ -71,54 +76,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  /* background: rgba(255, 255, 255, 0.2); */
   color: rgb(254, 124, 2);
-  font-family: "B612", sans-serif;
 }
 
-nav {
-  /* background-color: #333; */
-  padding: 10px;
-  margin-bottom: 100px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-}
-
-/* Span styles */
-nav ul li a span {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
 .cn {
   display: flex;
   flex-direction: column;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .container {
-  width: 85%;
-  max-height: 600px;
+  width: 95%;
+  max-height: 700px;
   position: relative;
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  background-color: rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
   flex-wrap: wrap;
@@ -165,9 +142,11 @@ nav ul li a span {
 .countdown {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 20px;
   font-family: "Orbitron", sans-serif;
+  flex-wrap: wrap;
 }
 
 .countdown-item {
@@ -177,6 +156,7 @@ nav ul li a span {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
+  margin: 10px;
 }
 
 .countdown-number {
@@ -200,6 +180,7 @@ p#typing-text {
   font-size: 17px;
   letter-spacing: 1px;
 }
+
 #bg-image {
   position: fixed;
   top: 0;
@@ -245,8 +226,98 @@ p#typing-text {
   }
 
   nav ul li a {
-    padding-left: 5px;
-    padding-right: 0;
+    padding: 5px;
     margin: 0;
+  }
+
+  .content h1 {
+    font-size: 32px; /* Responsive font size */
+  }
+
+  .countdown-number {
+    font-size: 40px;
+  }
+
+  .countdown-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    width: 100%;
+    padding-left: 5px;
+    margin: auto;
+  }
+
+  nav ul li a {
+    padding: 5px;
+    margin: auto;
+  }
+
+  .content h1 {
+    font-size: 28px; /* Responsive font size */
+  }
+  .countdown{
+    gap: 10px;
+    flex-direction: row;
+
+  }
+
+  .countdown-number {
+    font-size: 36px;
+  }
+
+  .countdown-label {
+    font-size: 12px;
+  }
+
+  .countdown-item {
+    padding: 10px;
+  }
+
+  .header-image-container img {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  nav {
+    width: 100%;
+    padding-left: 5px;
+    margin: auto;
+  }
+
+  nav ul li a {
+    padding: 5px;
+    margin: auto;
+  }
+
+  .content h1 {
+    font-size: 24px; /* Responsive font size */
+  }
+
+  .countdown-number {
+    font-size: 28px;
+
+  }
+
+  .countdown-label {
+    font-size: 10px;
+  }
+
+  .header-image-container img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .ECE {
+    width: 90%;
+    margin: auto;
+  }
+  p#typing-text{
+    font-size: 15px;
+    letter-spacing: .5px;
   }
 }
