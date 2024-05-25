@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Eater&family=Poetsen+One&family=Rubik+Glitch+Pop&display=swap");
 
 body,
 html {
@@ -36,8 +36,8 @@ html {
 nav {
   position: absolute;
   top: 100px;
-  width: 550px;
-  max-width: 90%;
+  /* width: 500px; */
+  max-width: 85%;
   border: 2px solid rgba(26, 70, 171, 0.958);
   border-radius: 8px;
   margin: auto;
@@ -55,7 +55,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -77,6 +77,8 @@ nav ul li a {
 
 nav ul li a:hover {
   color: rgb(254, 124, 2);
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
 }
 
 .cn {
@@ -142,7 +144,6 @@ nav ul li a:hover {
   text-align: center;
 }
 
-
 .content h1 {
   font-size: 40px; /* Use viewport units for responsive font size */
   margin: 0;
@@ -154,9 +155,10 @@ nav ul li a:hover {
 
 countdown {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 20px;
   margin-top: 20px;
   font-family: "Orbitron", sans-serif;
 }
@@ -168,7 +170,8 @@ countdown {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
+  margin-bottom: 20px;
 }
 
 .countdown-number {
@@ -206,7 +209,7 @@ p#typing-text {
   color: white;
   width: 350px;
   height: auto;
-  padding: 20px;
+  padding: 10px;
   margin: auto;
   margin-top: 10px;
   text-align: center;
@@ -219,12 +222,15 @@ p#typing-text {
 
 .ECE > :nth-child(1) {
   font-size: 18px;
-  font-family: "Martel Sans", sans-serif;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
   text-align: center;
   padding-bottom: 10px;
 }
 
 .ECE > :nth-child(2) {
+  text-transform: uppercase;
+  font-weight: bolder;
   font-size: 22px;
   padding-bottom: 5px;
 }
@@ -269,22 +275,23 @@ p#typing-text {
   .content h1 {
     font-size: 28px; /* Responsive font size */
   }
-  .countdown{
-    gap: 10px;
+  .countdown {
+    gap: 5px;
     flex-direction: row;
-
   }
 
   .countdown-number {
-    font-size: 36px;
+    font-size: 20px;
   }
 
   .countdown-label {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .countdown-item {
-    padding: 10px;
+    padding: 5px;
+    margin: 4px;
+    margin-bottom: 20px;
   }
 
   .header-image-container img {
@@ -311,7 +318,6 @@ p#typing-text {
 
   .countdown-number {
     font-size: 28px;
-
   }
 
   .countdown-label {
@@ -327,8 +333,8 @@ p#typing-text {
     width: 90%;
     margin: auto;
   }
-  p#typing-text{
+  p#typing-text {
     font-size: 15px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
 }
