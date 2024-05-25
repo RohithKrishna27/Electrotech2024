@@ -115,20 +115,33 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
+/* Container for the logo */
 .logo {
   max-width: 150px;
   margin-top: 0px;
 }
 
+/* Logo image styling */
 .logo img {
   max-width: 100%;
   height: auto;
 }
 
+/* Different transparency levels */
+.transparent-50 {
+  opacity: 0.5; /* 50% transparency */
+}
+
+.transparent-80 {
+  opacity: 0.8; /* 80% transparency */
+}
+
+/* Content styling */
 .content {
   width: 100%;
   text-align: center;
 }
+
 
 .content h1 {
   font-size: 40px; /* Use viewport units for responsive font size */
@@ -139,14 +152,13 @@ nav ul li a:hover {
   text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
-.countdown {
+countdown {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 25px;
   margin-top: 20px;
   font-family: "Orbitron", sans-serif;
-  flex-wrap: wrap;
 }
 
 .countdown-item {
@@ -171,7 +183,6 @@ nav ul li a:hover {
   text-transform: uppercase; /* Make the labels uppercase */
   letter-spacing: 2px; /* Add some letter spacing */
 }
-
 /* Change the font for the paragraph */
 p#typing-text {
   font-family: "B612", sans-serif;
