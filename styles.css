@@ -69,8 +69,8 @@ nav ul li a {
 
 nav ul li a:hover {
   /* background: rgba(255, 255, 255, 0.2); */
-  color: rgb(41, 185, 213);
-  font-family: "Jacquard 12", system-ui;
+  color: rgb(254, 124, 2);
+  font-family: "B612", sans-serif;
 }
 
 nav {
