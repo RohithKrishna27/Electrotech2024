@@ -168,7 +168,9 @@ countdown {
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  width: 75px;
+  height: 75px;
+  padding: 7px;
   border-radius: 10px;
   margin: 5px;
   margin-bottom: 20px;
@@ -285,13 +287,18 @@ p#typing-text {
   }
 
   .countdown-label {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-top: 10px;
   }
 
   .countdown-item {
-    padding: 5px;
-    margin: 4px;
-    margin-bottom: 20px;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    gap: 5px;
+    margin-bottom: 35px;
   }
 
   .header-image-container img {
