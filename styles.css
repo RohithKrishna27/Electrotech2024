@@ -114,6 +114,7 @@ nav ul li a span {
   padding: 20px;
   text-align: center;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .content-logo-wrapper {
@@ -194,4 +195,18 @@ p#typing-text {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  nav{
+    width: 100%;
+    padding-left:  5px;
+    margin: 0;
+  }
+
+  nav ul li a {
+    padding-left:  5px;
+    padding-right: 0;
+    margin: 0;
+  }
 }
