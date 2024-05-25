@@ -276,12 +276,12 @@ p#typing-text {
     font-size: 28px; /* Responsive font size */
   }
   .countdown {
-    gap: 10px;
+    gap: 5px;
     flex-direction: row;
   }
 
   .countdown-number {
-    font-size: 36px;
+    font-size: 20px;
   }
 
   .countdown-label {
@@ -290,6 +290,8 @@ p#typing-text {
 
   .countdown-item {
     padding: 5px;
+    margin: 4px;
+    margin-bottom: 20px;
   }
 
   .header-image-container img {
