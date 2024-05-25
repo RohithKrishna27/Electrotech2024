@@ -11,10 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
       textElement.innerHTML += text.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
-    } else {
-      i = 0;
-      setTimeout(typeWriter, 2000);
-      textElement.innerHTML = "";
     }
   }
 
@@ -50,37 +46,39 @@ function pad(number) {
   return (number < 10 ? "0" : "") + number;
 }
 
-document.querySelectorAll('.jumble-text').forEach(element => {
+document.querySelectorAll(".jumble-text").forEach((element) => {
   const originalText = element.textContent;
-  const letters = originalText.split('');
-  element.innerHTML = letters.map(letter => `<span>${letter}</span>`).join('');
+  const letters = originalText.split("");
+  element.innerHTML = letters
+    .map((letter) => `<span>${letter}</span>`)
+    .join("");
 
-  element.addEventListener('mouseover', () => {
-      const spans = Array.from(element.querySelectorAll('span'));
-      let i = 0;
+  element.addEventListener("mouseover", () => {
+    const spans = Array.from(element.querySelectorAll("span"));
+    let i = 0;
 
-      const intervalId = setInterval(() => {
-          if (i >= spans.length - 1) {
-              clearInterval(intervalId);
-              setTimeout(() => {
-                  resetText(spans);
-              }, 100); // Short delay before resetting
-          } else {
-              const temp = spans[i].textContent;
-              spans[i].textContent = spans[i + 1].textContent;
-              spans[i + 1].textContent = temp;
-              i++;
-          }
-      }, 200); // Speed of letter swapping
-
-      function resetText(spans) {
-          spans.forEach((span, index) => {
-              span.textContent = letters[index];
-          });
+    const intervalId = setInterval(() => {
+      if (i >= spans.length - 1) {
+        clearInterval(intervalId);
+        setTimeout(() => {
+          resetText(spans);
+        }, 100); // Short delay before resetting
+      } else {
+        const temp = spans[i].textContent;
+        spans[i].textContent = spans[i + 1].textContent;
+        spans[i + 1].textContent = temp;
+        i++;
       }
+    }, 200); // Speed of letter swapping
+
+    function resetText(spans) {
+      spans.forEach((span, index) => {
+        span.textContent = letters[index];
+      });
+    }
   });
 
-  element.addEventListener('mouseout', () => {
-      // No need to reset on mouseout, will reset after complete interchange
+  element.addEventListener("mouseout", () => {
+    // No need to reset on mouseout, will reset after complete interchange
   });
 });
