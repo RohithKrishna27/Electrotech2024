@@ -1,177 +1,197 @@
 /* General Styles */
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'B612', sans-serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; 
+
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap");
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "B612", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.video-background {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-#bg-video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: cover; 
-}
 .header-image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
 }
 
 .header-image-container img {
-    max-width: 90%;
-    height: auto;
+  max-width: 90%;
+  height: auto;
 }
 
-
 nav {
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    text-align: center;
-    z-index: 2;
-    padding: 10px 0;
-    text-align: center;
-    font-family: 'B612', sans-serif;
-    font-weight: 700;
-    font-style: italic;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  padding: 10px 0;
+  text-align: center;
+  font-family: "B612", sans-serif;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 nav ul li {
-    display: inline;
+  display: inline;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 16px;
+
+  margin-top: 10px;
+  padding: 6px 10px;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
 }
 
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); */
+  color: rgb(41, 185, 213);
+  font-family: "Jacquard 12", system-ui;
+}
+
+nav {
+  /* background-color: #333; */
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+/* Span styles */
+nav ul li a span {
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 .container {
-    width: 80%;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    background-color: rgba(0, 0, 0, 0.1); 
-    padding: 20px; 
-    text-align: center; 
-    flex-wrap: wrap; 
+  width: 85%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .content-logo-wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%; 
-    flex-direction: column;
-    text-align: center; 
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
 }
 
 .logo {
-    max-width: 150px;
-    margin-top: 20px;
+  max-width: 150px;
+  margin-top: 20px;
 }
 
 .logo img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .content {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .content h1 {
-    font-size: 40px; /* Use viewport units for responsive font size */
-    margin: 0;
-    font-family: 'B612', sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  font-size: 40px; /* Use viewport units for responsive font size */
+  margin: 0;
+  font-family: "B612", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
 .countdown {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    font-family: 'Orbitron', sans-serif; 
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  font-family: "Orbitron", sans-serif;
 }
 
 .countdown-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .countdown-number {
-    font-size: 50px;
-    color: #f7f7f7; /* Change the color to green for a tech look */
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Add a green glow effect */
+  font-size: 50px;
+  color: #f7f7f7; /* Change the color to green for a tech look */
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Add a green glow effect */
 }
 
 .countdown-label {
-    font-size: 16px;
-    color: #ffffff; /* Change the color to white */
-    text-transform: uppercase; /* Make the labels uppercase */
-    letter-spacing: 2px; /* Add some letter spacing */
+  font-size: 16px;
+  color: #ffffff; /* Change the color to white */
+  text-transform: uppercase; /* Make the labels uppercase */
+  letter-spacing: 2px; /* Add some letter spacing */
 }
 
 /* Change the font for the paragraph */
 p#typing-text {
-    font-family: 'B612', sans-serif;
-    font-weight: 700; /* Bold */
-    font-style: italic; /* Italic */
-    font-size: 17px;
-    letter-spacing: 1px;
+  font-family: "B612", sans-serif;
+  font-weight: 700; /* Bold */
+  font-style: italic; /* Italic */
+  font-size: 17px;
+  letter-spacing: 1px;
 }
 #bg-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
