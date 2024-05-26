@@ -17,7 +17,7 @@ html {
 .header-image-container {
   position: absolute;
   top: 0;
-
+  left: 0;
   width: 100%;
   text-align: center;
   z-index: 1;
@@ -269,13 +269,14 @@ p#typing-text {
 
 @media (max-width: 480px) {
   nav {
-    width: 100%;
+    width: 90%;
     padding-left: 5px;
+    padding-right: 5px;
     margin: auto;
   }
 
   nav ul li a {
-    padding: 5px;
+    padding: 4px;
     margin: auto;
   }
 
@@ -314,14 +315,14 @@ p#typing-text {
 
 @media (max-width: 380px) {
   nav {
-    width: 100%;
+    width: 90%;
     padding-left: 5px;
     padding-right: 5px;
     margin: auto;
   }
 
   nav ul li a {
-    padding: 5px;
+    padding: 4px;
     margin: 0;
   }
 
